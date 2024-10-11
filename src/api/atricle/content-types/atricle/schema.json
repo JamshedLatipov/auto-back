@@ -1,0 +1,117 @@
+{
+  "kind": "collectionType",
+  "collectionName": "atricles",
+  "info": {
+    "singularName": "atricle",
+    "pluralName": "atricles",
+    "displayName": "article",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Ready",
+        "Invalid",
+        "NeeSmallFix"
+      ]
+    },
+    "min_price": {
+      "type": "decimal"
+    },
+    "max_price": {
+      "type": "decimal"
+    },
+    "avg_price": {
+      "type": "decimal"
+    },
+    "car_model": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::model.model",
+      "inversedBy": "articles"
+    },
+    "vin": {
+      "type": "string"
+    },
+    "lot_number": {
+      "type": "biginteger"
+    },
+    "total_sum": {
+      "type": "decimal"
+    },
+    "city": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::city.city",
+      "inversedBy": "articles"
+    },
+    "fuel_type": {
+      "type": "string"
+    },
+    "body_type": {
+      "type": "enumeration",
+      "enum": [
+        "SEDAN",
+        "WAGUN",
+        "COUPE",
+        "HATCHBACK",
+        "CONVERTIBLE",
+        "MINIVAN",
+        "PICKUP"
+      ]
+    },
+    "engine": {
+      "type": "string"
+    },
+    "milage": {
+      "type": "string"
+    },
+    "transmission": {
+      "type": "enumeration",
+      "enum": [
+        "AUTO",
+        "VARIATOR",
+        "MANUAL"
+      ]
+    },
+    "color": {
+      "type": "string"
+    }
+  }
+}

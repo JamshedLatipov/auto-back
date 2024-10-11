@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "models",
+  "info": {
+    "singularName": "model",
+    "pluralName": "models",
+    "displayName": "model"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "manufactor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::manufactor.manufactor",
+      "inversedBy": "models"
+    },
+    "name": {
+      "type": "string"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::atricle.atricle",
+      "mappedBy": "car_model"
+    }
+  }
+}

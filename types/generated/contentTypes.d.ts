@@ -838,6 +838,9 @@ export interface ApiAtricleAtricle extends Schema.CollectionType {
     milage: Attribute.String;
     transmission: Attribute.Enumeration<['AUTO', 'VARIATOR', 'MANUAL']>;
     color: Attribute.String;
+    damage: Attribute.String;
+    sold_state: Attribute.Enumeration<['SOLD_OUT', 'ACTIVE']>;
+    sold_date: Attribute.DateTime;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -907,6 +910,7 @@ export interface ApiCountryCountry extends Schema.CollectionType {
       'api::city.city'
     >;
     code: Attribute.String;
+    delivery: Attribute.BigInteger;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

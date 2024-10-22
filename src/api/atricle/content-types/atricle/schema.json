@@ -112,6 +112,19 @@
     },
     "color": {
       "type": "string"
+    },
+    "damage": {
+      "type": "string"
+    },
+    "sold_state": {
+      "type": "enumeration",
+      "enum": [
+        "SOLD_OUT",
+        "ACTIVE"
+      ]
+    },
+    "sold_date": {
+      "type": "datetime"
     }
   }
 }

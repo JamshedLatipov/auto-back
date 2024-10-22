@@ -23,6 +23,9 @@
     },
     "code": {
       "type": "string"
+    },
+    "delivery": {
+      "type": "biginteger"
     }
   }
 }

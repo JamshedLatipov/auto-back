@@ -93,7 +93,8 @@
         "HATCHBACK",
         "CONVERTIBLE",
         "MINIVAN",
-        "PICKUP"
+        "PICKUP",
+        "CROSSOVER"
       ]
     },
     "engine": {

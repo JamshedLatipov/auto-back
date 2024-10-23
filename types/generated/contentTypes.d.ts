@@ -831,7 +831,8 @@ export interface ApiAtricleAtricle extends Schema.CollectionType {
         'HATCHBACK',
         'CONVERTIBLE',
         'MINIVAN',
-        'PICKUP'
+        'PICKUP',
+        'CROSSOVER'
       ]
     >;
     engine: Attribute.String;

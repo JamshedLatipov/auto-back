@@ -126,6 +126,13 @@
     },
     "sold_date": {
       "type": "datetime"
+    },
+    "u_vin": {
+      "type": "uid",
+      "targetField": "vin"
+    },
+    "whill_drive": {
+      "type": "string"
     }
   }
 }

@@ -939,6 +939,8 @@ export interface ApiAtricleAtricle extends Schema.CollectionType {
     damage: Attribute.String;
     sold_state: Attribute.Enumeration<['SOLD_OUT', 'ACTIVE']>;
     sold_date: Attribute.DateTime;
+    u_vin: Attribute.UID<'api::atricle.atricle', 'vin'>;
+    whill_drive: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
